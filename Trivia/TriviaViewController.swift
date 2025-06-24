@@ -8,6 +8,17 @@
 import UIKit
 
 class TriviaViewController: UIViewController {
+    
+    @IBOutlet weak var QuestionNumberLabel: UILabel!
+    @IBOutlet weak var QuestionLabel: UILabel!
+    @IBOutlet weak var ThemeLabel: UILabel!
+    
+    @IBOutlet weak var Answer1: UILabel!
+    
+    
+    @IBOutlet weak var Answer2: UILabel!
+    
+    @IBOutlet weak var Answer3: UILabel!
     @IBAction func Answer1(_ sender: Any) {
     }
     @IBAction func Answer2(_ sender: Any) {
@@ -16,9 +27,6 @@ class TriviaViewController: UIViewController {
     }
     @IBAction func Answer4(_ sender: Any) {
     }
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 //      Used ChatGPT to generate the questions
