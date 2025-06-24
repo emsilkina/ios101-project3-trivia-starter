@@ -68,6 +68,9 @@
                                 <color key="tintColor" red="0.84258943799999997" green="0.56875963399999996" blue="0.75119422790000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Answer2"/>
+                                <connections>
+                                    <action selector="Answer2:" destination="V9D-OT-sla" eventType="touchUpInside" id="jWd-fv-Fqb"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="knt-HT-ZuV">
                                 <rect key="frame" x="51" y="653" width="291" height="43"/>
@@ -78,6 +81,9 @@
                                 <color key="tintColor" red="0.84258943799999997" green="0.56875963399999996" blue="0.75119422790000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Answer3"/>
+                                <connections>
+                                    <action selector="Answer3:" destination="V9D-OT-sla" eventType="touchUpInside" id="bDu-G4-BgE"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vQM-Hf-Sy1">
                                 <rect key="frame" x="51" y="716" width="291" height="43"/>
@@ -88,6 +94,21 @@
                                 <color key="tintColor" red="0.84258943799999997" green="0.56875963399999996" blue="0.75119422790000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Answer4"/>
+                                <connections>
+                                    <action selector="Answer4:" destination="V9D-OT-sla" eventType="touchUpInside" id="zgU-IX-kJu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u4H-PR-ttJ">
+                                <rect key="frame" x="51" y="533" width="291" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="7vE-XQ-gbd"/>
+                                </constraints>
+                                <color key="tintColor" red="0.84258943799999997" green="0.56875963399999996" blue="0.75119422790000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Answer1"/>
+                                <connections>
+                                    <action selector="Answer1:" destination="V9D-OT-sla" eventType="touchUpInside" id="5OK-Yf-AJL"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rVW-6z-Kvc"/>
@@ -105,9 +126,12 @@
                             <constraint firstItem="knt-HT-ZuV" firstAttribute="leading" secondItem="G7E-E3-Yx3" secondAttribute="leading" id="Hzr-Ri-3kV"/>
                             <constraint firstItem="5O2-vt-AiA" firstAttribute="centerX" secondItem="fTP-sd-xbQ" secondAttribute="centerX" id="KLQ-oN-ojz"/>
                             <constraint firstItem="knt-HT-ZuV" firstAttribute="trailing" secondItem="G7E-E3-Yx3" secondAttribute="trailing" id="SxL-L6-XMx"/>
+                            <constraint firstItem="u4H-PR-ttJ" firstAttribute="baseline" secondItem="aN1-gh-pfy" secondAttribute="baseline" id="T9q-PU-NSx"/>
                             <constraint firstItem="knt-HT-ZuV" firstAttribute="trailing" secondItem="aN1-gh-pfy" secondAttribute="trailing" id="Y9R-sq-equ"/>
+                            <constraint firstItem="u4H-PR-ttJ" firstAttribute="leading" secondItem="aN1-gh-pfy" secondAttribute="leading" id="ZDs-9n-Iir"/>
                             <constraint firstItem="knt-HT-ZuV" firstAttribute="top" secondItem="G7E-E3-Yx3" secondAttribute="bottom" constant="20" id="dr4-4s-VGX"/>
                             <constraint firstItem="aN1-gh-pfy" firstAttribute="trailing" secondItem="kqa-DE-OmT" secondAttribute="trailing" id="e2g-98-pnW"/>
+                            <constraint firstItem="u4H-PR-ttJ" firstAttribute="trailing" secondItem="aN1-gh-pfy" secondAttribute="trailing" id="hrd-vB-WfV"/>
                             <constraint firstItem="5O2-vt-AiA" firstAttribute="top" secondItem="iL3-xe-bLa" secondAttribute="top" constant="160" id="isw-Kd-ZGg"/>
                             <constraint firstItem="vQM-Hf-Sy1" firstAttribute="leading" secondItem="knt-HT-ZuV" secondAttribute="leading" id="jCT-ym-qOc"/>
                             <constraint firstItem="aN1-gh-pfy" firstAttribute="top" secondItem="kqa-DE-OmT" secondAttribute="bottom" constant="42" id="mVd-Ig-uOk"/>
@@ -117,6 +141,7 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mdJ-iG-5y8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="V9D-OT-sla" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-92.36641221374046" y="-160.56338028169014"/>
         </scene>
