@@ -59,6 +59,9 @@
                                 <color key="tintColor" red="0.84258943796157837" green="0.56875963396310414" blue="0.75119422785331824" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted"/>
+                                <connections>
+                                    <action selector="Answer1Button:" destination="shn-oL-YVj" eventType="touchUpInside" id="BgX-sG-U32"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xNY-dx-Jdr">
                                 <rect key="frame" x="149" y="542" width="95" height="22"/>
@@ -76,6 +79,7 @@
                                 <buttonConfiguration key="configuration" style="tinted"/>
                                 <connections>
                                     <action selector="Answer2:" destination="V9D-OT-sla" eventType="touchUpInside" id="jWd-fv-Fqb"/>
+                                    <action selector="Answer2Button:" destination="shn-oL-YVj" eventType="touchUpInside" id="85o-VN-y0f"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e87-2U-nOq">
@@ -95,6 +99,7 @@
                                 <buttonConfiguration key="configuration" style="tinted"/>
                                 <connections>
                                     <action selector="Answer3:" destination="V9D-OT-sla" eventType="touchUpInside" id="bDu-G4-BgE"/>
+                                    <action selector="Answer3Button:" destination="shn-oL-YVj" eventType="touchUpInside" id="wzm-4Q-zpZ"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer 3" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M40-Oq-b1I">
@@ -114,6 +119,7 @@
                                 <buttonConfiguration key="configuration" style="tinted"/>
                                 <connections>
                                     <action selector="Answer4:" destination="V9D-OT-sla" eventType="touchUpInside" id="zgU-IX-kJu"/>
+                                    <action selector="Answer4Button:" destination="shn-oL-YVj" eventType="touchUpInside" id="6bo-BT-VH0"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer 4" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5VC-vY-Lsb">

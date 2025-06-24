@@ -17,16 +17,24 @@ class TriviaViewController: UIViewController {
     @IBOutlet weak var Answer3: UILabel!
     @IBOutlet weak var Answer4: UILabel!
     
+//    @IBAction func Answer1(_ sender: Any) {
+//        nextQuestion()
+//    }
+//
+    @IBAction func Answer1Button(_ sender: Any) {
+        nextQuestion()
+    }
     
+    @IBAction func Answer2Button(_ sender: Any) {
+        nextQuestion()
+    }
     
-    @IBAction func Answer1(_ sender: Any) {
-        
+    @IBAction func Answer3Button(_ sender: Any) {
+        nextQuestion()
     }
-    @IBAction func Answer2(_ sender: Any) {
-    }
-    @IBAction func Answer3(_ sender: Any) {
-    }
-    @IBAction func Answer4(_ sender: Any) {
+    
+    @IBAction func Answer4Button(_ sender: Any) {
+        nextQuestion()
     }
     
     var questionNum = 0
@@ -34,6 +42,8 @@ class TriviaViewController: UIViewController {
     
     func nextQuestion() {
         questionNum+=1
+        displayQuestion()
+        print(questionNum)
     }
     
     func displayQuestion() {
@@ -102,7 +112,8 @@ class TriviaViewController: UIViewController {
                 answerOptions: ["Leonardo da Vinci", "Michelangelo", "Vincent van Gogh", "Pablo Picasso"]
             )
         ]
-
+        
+        displayQuestion()
         // Do any additional setup after loading the view.
     }
     
