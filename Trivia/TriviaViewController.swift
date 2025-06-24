@@ -9,6 +9,7 @@ import UIKit
 
 class TriviaViewController: UIViewController {
     
+    @IBOutlet weak var GameOverView: UIView!
     @IBOutlet weak var QuestionNumberLabel: UILabel!
     @IBOutlet weak var QuestionLabel: UILabel!
     @IBOutlet weak var ThemeLabel: UILabel!
@@ -17,24 +18,21 @@ class TriviaViewController: UIViewController {
     @IBOutlet weak var Answer3: UILabel!
     @IBOutlet weak var Answer4: UILabel!
     
+    @IBOutlet weak var ScoreLabel: UILabel!
     @IBAction func Answer1Button(_ sender: Any) {
         checkAnswer(index: 0)
-        nextQuestion()
     }
     
     @IBAction func Answer2Button(_ sender: Any) {
         checkAnswer(index: 1)
-        nextQuestion()
     }
     
     @IBAction func Answer3Button(_ sender: Any) {
         checkAnswer(index: 2)
-        nextQuestion()
     }
     
     @IBAction func Answer4Button(_ sender: Any) {
         checkAnswer(index: 3)
-        nextQuestion()
     }
     
     var questionNum = 0
@@ -45,6 +43,9 @@ class TriviaViewController: UIViewController {
         if(questionNum<questions.count-1) {
             questionNum+=1
             displayQuestion()
+        } else {
+            GameOverView.isHidden = false
+            ScoreLabel.text = "Score:  \(correctlyAnswered)/\(questions.count)"
         }
         
     }
@@ -54,6 +55,7 @@ class TriviaViewController: UIViewController {
             correctlyAnswered+=1
             print("CORRECT")
         }
+        nextQuestion()
     }
     
     func displayQuestion() {
@@ -69,7 +71,7 @@ class TriviaViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        GameOverView.isHidden = true
 //      Used ChatGPT to generate the questions
         questions = [
             Question(
