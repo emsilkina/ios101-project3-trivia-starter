@@ -41,13 +41,17 @@ class TriviaViewController: UIViewController {
     var questions: [Question] = []
     
     func nextQuestion() {
-        questionNum+=1
-        displayQuestion()
-        print(questionNum)
+        if(questionNum<questions.count-1) {
+            questionNum+=1
+            displayQuestion()
+            print(questionNum)
+        }
+        
     }
     
     func displayQuestion() {
         let question = questions[questionNum]
+        QuestionNumberLabel.text = "Question \(questionNum + 1)/\(questions.count)"
         QuestionLabel.text = question.question
         ThemeLabel.text = question.category
         Answer1.text = question.answerOptions[0]
