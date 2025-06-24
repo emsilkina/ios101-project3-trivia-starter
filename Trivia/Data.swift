@@ -12,4 +12,5 @@ struct Question
     let category: String
     let question: String
     let answerOptions: [String]
+    let correctOptionIndex: Int
 }

@@ -58,7 +58,9 @@
                                 </constraints>
                                 <color key="tintColor" red="0.84258943796157837" green="0.56875963396310414" blue="0.75119422785331824" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted"/>
+                                <buttonConfiguration key="configuration" style="tinted">
+                                    <color key="baseBackgroundColor" red="0.84258943799999997" green="0.56875963399999996" blue="0.75119422790000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="Answer1Button:" destination="shn-oL-YVj" eventType="touchUpInside" id="BgX-sG-U32"/>
                                 </connections>
@@ -76,7 +78,9 @@
                                 </constraints>
                                 <color key="tintColor" red="0.84258943799999997" green="0.56875963399999996" blue="0.75119422790000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted"/>
+                                <buttonConfiguration key="configuration" style="tinted">
+                                    <color key="baseBackgroundColor" red="0.84258943799999997" green="0.56875963399999996" blue="0.75119422790000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="Answer2:" destination="V9D-OT-sla" eventType="touchUpInside" id="jWd-fv-Fqb"/>
                                     <action selector="Answer2Button:" destination="shn-oL-YVj" eventType="touchUpInside" id="85o-VN-y0f"/>
@@ -96,7 +100,9 @@
                                 </constraints>
                                 <color key="tintColor" red="0.84258943799999997" green="0.56875963399999996" blue="0.75119422790000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted"/>
+                                <buttonConfiguration key="configuration" style="tinted">
+                                    <color key="baseBackgroundColor" red="0.84258943799999997" green="0.56875963399999996" blue="0.75119422790000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="Answer3:" destination="V9D-OT-sla" eventType="touchUpInside" id="bDu-G4-BgE"/>
                                     <action selector="Answer3Button:" destination="shn-oL-YVj" eventType="touchUpInside" id="wzm-4Q-zpZ"/>
@@ -116,7 +122,9 @@
                                 </constraints>
                                 <color key="tintColor" red="0.84258943799999997" green="0.56875963399999996" blue="0.75119422790000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted"/>
+                                <buttonConfiguration key="configuration" style="tinted">
+                                    <color key="baseBackgroundColor" red="0.84258943799999997" green="0.56875963399999996" blue="0.75119422790000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="Answer4:" destination="V9D-OT-sla" eventType="touchUpInside" id="zgU-IX-kJu"/>
                                     <action selector="Answer4Button:" destination="shn-oL-YVj" eventType="touchUpInside" id="6bo-BT-VH0"/>
