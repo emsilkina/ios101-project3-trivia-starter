@@ -12,14 +12,15 @@ class TriviaViewController: UIViewController {
     @IBOutlet weak var QuestionNumberLabel: UILabel!
     @IBOutlet weak var QuestionLabel: UILabel!
     @IBOutlet weak var ThemeLabel: UILabel!
-    
     @IBOutlet weak var Answer1: UILabel!
-    
-    
     @IBOutlet weak var Answer2: UILabel!
-    
     @IBOutlet weak var Answer3: UILabel!
+    @IBOutlet weak var Answer4: UILabel!
+    
+    
+    
     @IBAction func Answer1(_ sender: Any) {
+        
     }
     @IBAction func Answer2(_ sender: Any) {
     }
@@ -27,10 +28,29 @@ class TriviaViewController: UIViewController {
     }
     @IBAction func Answer4(_ sender: Any) {
     }
+    
+    var questionNum = 0
+    var questions: [Question] = []
+    
+    func nextQuestion() {
+        questionNum+=1
+    }
+    
+    func displayQuestion() {
+        let question = questions[questionNum]
+        QuestionLabel.text = question.question
+        ThemeLabel.text = question.category
+        Answer1.text = question.answerOptions[0]
+        Answer2.text = question.answerOptions[1]
+        Answer3.text = question.answerOptions[2]
+        Answer4.text = question.answerOptions[3]
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 //      Used ChatGPT to generate the questions
-        let questions: [Question] = [
+        questions = [
             Question(
                 category: "Science",
                 question: "What planet is known as the Red Planet?",
