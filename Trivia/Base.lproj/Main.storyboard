@@ -130,14 +130,14 @@
                                     <action selector="Answer4Button:" destination="shn-oL-YVj" eventType="touchUpInside" id="6bo-BT-VH0"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Answer 4" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5VC-vY-Lsb">
-                                <rect key="frame" x="64" y="726" width="266" height="22"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer 4" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5VC-vY-Lsb">
+                                <rect key="frame" x="64" y="727.33333333333337" width="265" height="20.333333333333371"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ezb-Lu-YuS">
-                                <rect key="frame" x="30" y="88" width="333" height="706"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ezb-Lu-YuS">
+                                <rect key="frame" x="30" y="88" width="333" height="680"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 10/10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5qX-eo-2od">
                                         <rect key="frame" x="99" y="325" width="135" height="30"/>
@@ -154,11 +154,24 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LnF-iO-31S">
+                                        <rect key="frame" x="119" y="407" width="96" height="35"/>
+                                        <color key="tintColor" red="0.84258943799999997" green="0.56875963399999996" blue="0.75119422790000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Try Again">
+                                            <color key="baseBackgroundColor" red="0.84258943799999997" green="0.56875963399999996" blue="0.75119422790000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="RestartButton:" destination="shn-oL-YVj" eventType="touchUpInside" id="obq-tu-Cy5"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
+                                    <constraint firstItem="LnF-iO-31S" firstAttribute="top" secondItem="5qX-eo-2od" secondAttribute="bottom" constant="52" id="693-iA-tqc"/>
                                     <constraint firstItem="GHq-uj-jVg" firstAttribute="centerX" secondItem="ezb-Lu-YuS" secondAttribute="centerX" id="6cE-1m-t7E"/>
                                     <constraint firstItem="5qX-eo-2od" firstAttribute="centerX" secondItem="ezb-Lu-YuS" secondAttribute="centerX" id="M2n-Ce-9D7"/>
+                                    <constraint firstItem="LnF-iO-31S" firstAttribute="centerX" secondItem="5qX-eo-2od" secondAttribute="centerX" id="Pbh-pZ-B20"/>
                                     <constraint firstItem="GHq-uj-jVg" firstAttribute="leading" secondItem="ezb-Lu-YuS" secondAttribute="leading" constant="77" id="cOS-d2-TBl"/>
                                     <constraint firstItem="GHq-uj-jVg" firstAttribute="top" secondItem="ezb-Lu-YuS" secondAttribute="top" constant="263" id="dKc-wK-0Zt"/>
                                     <constraint firstItem="5qX-eo-2od" firstAttribute="top" secondItem="GHq-uj-jVg" secondAttribute="bottom" constant="20" id="feU-hl-vdg"/>

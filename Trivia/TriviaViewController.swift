@@ -9,6 +9,10 @@ import UIKit
 
 class TriviaViewController: UIViewController {
     
+    var questionNum = 0
+    var questions: [Question] = []
+    var correctlyAnswered = 0
+    
     @IBOutlet weak var GameOverView: UIView!
     @IBOutlet weak var QuestionNumberLabel: UILabel!
     @IBOutlet weak var QuestionLabel: UILabel!
@@ -19,6 +23,7 @@ class TriviaViewController: UIViewController {
     @IBOutlet weak var Answer4: UILabel!
     
     @IBOutlet weak var ScoreLabel: UILabel!
+    
     @IBAction func Answer1Button(_ sender: Any) {
         checkAnswer(index: 0)
     }
@@ -35,9 +40,13 @@ class TriviaViewController: UIViewController {
         checkAnswer(index: 3)
     }
     
-    var questionNum = 0
-    var questions: [Question] = []
-    var correctlyAnswered = 0
+    @IBAction func RestartButton(_ sender: Any) {
+        GameOverView.isHidden = true
+        questionNum = 0
+        correctlyAnswered = 0
+        displayQuestion()
+    }
+    
     
     func nextQuestion() {
         if(questionNum<questions.count-1) {
@@ -47,13 +56,11 @@ class TriviaViewController: UIViewController {
             GameOverView.isHidden = false
             ScoreLabel.text = "Score:  \(correctlyAnswered)/\(questions.count)"
         }
-        
     }
     
     func checkAnswer(index: Int){
         if (index==questions[questionNum].correctOptionIndex) {
             correctlyAnswered+=1
-            print("CORRECT")
         }
         nextQuestion()
     }
